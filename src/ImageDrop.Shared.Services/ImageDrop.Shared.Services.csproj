@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ImageDrop.AWS.S3\ImageDrop.AWS.S3.csproj" />
+      <ProjectReference Include="..\ImageDrop.Persistence\ImageDrop.Persistence.csproj" />
+      <ProjectReference Include="..\ImageDrop.Shared.Constants\ImageDrop.Shared.Constants.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.11" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="4.1.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="ImageDrop.Shared.Services.Tests.Unit" />
+        <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+    </ItemGroup>
+
+</Project>

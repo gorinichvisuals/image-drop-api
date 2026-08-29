@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.11" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10"/>
+        <PackageReference Include="RedisRateLimiting.AspNetCore" Version="1.2.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="10.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ImageDrop.Application\ImageDrop.Application.csproj" />
+      <ProjectReference Include="..\ImageDrop.AWS.SecretsManager\ImageDrop.AWS.SecretsManager.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="ImageDrop.Api.Tests.Unit" />
+    </ItemGroup>
+
+</Project>

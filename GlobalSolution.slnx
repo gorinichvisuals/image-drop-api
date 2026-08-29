@@ -1,0 +1,33 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Api/">
+    <Project Path="src/ImageDrop.Api/ImageDrop.Api.csproj" />
+    <Project Path="src/ImageDrop.Application/ImageDrop.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/AWS/">
+    <Project Path="src/ImageDrop.AWS.S3/ImageDrop.AWS.S3.csproj" />
+    <Project Path="src/ImageDrop.AWS.SecretsManager/ImageDrop.AWS.SecretsManager.csproj" />
+    <Project Path="src/ImageDrop.AWS.SQS.Consumer/ImageDrop.AWS.SQS.Consumer.csproj" />
+    <Project Path="src/ImageDrop.AWS.SQS.Publisher/ImageDrop.AWS.SQS.Publisher.csproj" />
+  </Folder>
+  <Folder Name="/src/Data/">
+    <Project Path="src/ImageDrop.Migrator/ImageDrop.Migrator.csproj" />
+    <Project Path="src/ImageDrop.Persistence/ImageDrop.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/ImageDrop.Shared.Constants/ImageDrop.Shared.Constants.csproj" />
+    <Project Path="src/ImageDrop.Shared.Services/ImageDrop.Shared.Services.csproj" />
+    <Project Path="src/ImageDrop.Shared.SQS.Contracts/ImageDrop.Shared.SQS.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Workers/">
+    <Project Path="src/ImageDrop.ImageCleanup.Worker/ImageDrop.ImageCleanup.Worker.csproj" />
+    <Project Path="src/ImageDrop.ImageProcessing.Worker/ImageDrop.ImageProcessing.Worker.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="tests/ImageDrop.Api.Tests.Unit/ImageDrop.Api.Tests.Unit.csproj" />
+    <Project Path="tests/ImageDrop.Application.Tests.Unit/ImageDrop.Application.Tests.Unit.csproj" />
+    <Project Path="tests/ImageDrop.AWS.S3.Tests.Unit/ImageDrop.AWS.S3.Tests.Unit.csproj" />
+    <Project Path="tests/ImageDrop.AWS.SQS.Consumer.Tests.Unit/ImageDrop.AWS.SQS.Consumer.Tests.Unit.csproj" />
+    <Project Path="tests/ImageDrop.Shared.Services.Tests.Unit/ImageDrop.Shared.Services.Tests.Unit.csproj" />
+  </Folder>
+</Solution>

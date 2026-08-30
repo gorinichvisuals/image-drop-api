@@ -113,23 +113,24 @@ The solution is divided into application projects, infrastructure integrations, 
 ```text
 ImageDrop/
 │
-├── ImageDrop.Api
-├── ImageDrop.Application
-│
-├── ImageDrop.AWS.S3
-├── ImageDrop.AWS.SecretsManager
-├── ImageDrop.AWS.SQS.Consumer
-├── ImageDrop.AWS.SQS.Publisher
-│
-├── ImageDrop.ImageCleanup.Worker
-├── ImageDrop.ImageProcessing.Worker
-│
-├── ImageDrop.Migrator
-├── ImageDrop.Persistence
-│
-├── ImageDrop.Shared.Constants
-├── ImageDrop.Shared.Services
-├── ImageDrop.Shared.SQS.Contracts
+├── src/
+│   ├── ImageDrop.Api
+│   ├── ImageDrop.Application
+│   │
+│   ├── ImageDrop.AWS.S3
+│   ├── ImageDrop.AWS.SecretsManager
+│   ├── ImageDrop.AWS.SQS.Consumer
+│   ├── ImageDrop.AWS.SQS.Publisher
+│   │
+│   ├── ImageDrop.ImageCleanup.Worker
+│   ├── ImageDrop.ImageProcessing.Worker
+│   │
+│   ├── ImageDrop.Migrator
+│   ├── ImageDrop.Persistence
+│   │
+│   ├── ImageDrop.Shared.Constants
+│   ├── ImageDrop.Shared.Services
+│   └── ImageDrop.Shared.SQS.Contracts
 │
 └── Tests/
     ├── ImageDrop.Api.Tests.Unit
